@@ -1,5 +1,5 @@
 {
-  "name": "rfi-example-echo-server",
+  "name": "rfi-example-echo-backend",
   "private": true,
   "description": "",
   "main": "server.js",
