@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>rfi example echo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+  </head>
+  <body>
+    <label>
+      Payload
+      <input id="payload" type="text" />
+    </label>
+    <button onclick="send()">Send</button>
+    <label>
+      Result
+      <input id="result" type="text" readonly />
+    </label>
+    <label>
+      Error
+      <textarea id="error" readonly></textarea>
+    </label>
+  </body>
+</html>

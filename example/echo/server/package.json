@@ -1,0 +1,14 @@
+{
+  "name": "rfi-example-echo-server",
+  "private": true,
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ronald Chen",
+  "license": "ISC",
+  "dependencies": {
+    "rfi-server": "file:../../../server"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "rfi",
+  "version": "0.0.0",
+  "description": "Remote function invocation",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix ."
+  },
+  "author": "Ronald Chen",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "4.5.0"
+  }
+}
