@@ -1,4 +1,4 @@
-<img src="https://cdn.rawgit.com/concept-not-found/rfi/9a0042b1/logo/sideways%20heart.svg" />
+<img width="350" height="350" src="https://cdn.rawgit.com/concept-not-found/rfi/b3c49b94/logo/sideways%20heart.svg" />
 
 remote function invocation
 ==========================
