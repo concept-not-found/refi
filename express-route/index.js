@@ -1,8 +1,10 @@
-module.exports = () => {
+module.exports = (express) => {
   const modules = {}
   let currentRequest
 
-  function controller(request, response, next) {
+  const router = express.Router()
+
+  router.post('/', (request, response, next) => {
     Promise.resolve()
       .then(() => {
         const {name, args} = request.body
@@ -26,13 +28,13 @@ module.exports = () => {
         })
       )
       .catch(next)
-  }
+  })
 
-  controller.register = (module) => {
+  router.register = (module) => {
     Object.assign(modules, module)
   }
 
-  controller.injectRequest = () => currentRequest
+  router.injectRequest = () => currentRequest
 
-  return controller
+  return router
 }

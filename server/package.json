@@ -12,6 +12,6 @@
     "body-parser": "1.17.2",
     "cors": "2.8.4",
     "express": "4.15.4",
-    "rfi-express-controller": "file:../express-controller"
+    "rfi-express-route": "file:../express-route"
   }
 }
