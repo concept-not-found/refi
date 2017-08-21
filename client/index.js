@@ -5,10 +5,15 @@ export default (serverUri) => {
     baseURL: serverUri
   })
 
-  return (name) => (args) =>
+  return (name) => (...args) =>
     http.post('/', {
       name,
       args
     })
-      .then(({data: {result}}) => result)
+      .then(({data: {result, value, error}}) => {
+        if (result === 'success') {
+          return value
+        }
+        return Promise.reject(error)
+      })
 }

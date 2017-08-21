@@ -17,6 +17,7 @@ module.exports = () => {
     application,
 
     register: rfiController.register,
+    injectRequest: rfiController.injectRequest,
 
     start(port) {
       application.listen(port)

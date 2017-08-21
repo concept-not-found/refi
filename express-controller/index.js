@@ -1,24 +1,38 @@
 module.exports = () => {
   const modules = {}
+  let currentRequest
 
-  function controller({body: {name, args}}, response, next) {
+  function controller(request, response, next) {
     Promise.resolve()
-      .then(() =>
-        modules[name](args)
-      )
-      .then((result) =>
+      .then(() => {
+        const {name, args} = request.body
+        try {
+          currentRequest = request
+          return modules[name](...args)
+        } finally {
+          currentRequest = undefined
+        }
+      })
+      .then((value) =>
         response.send({
-          result
+          result: 'success',
+          value
         })
       )
       .catch((error) =>
-        response.status(500).send(error.message)
+        response.send({
+          result: 'failure',
+          error
+        })
       )
+      .catch(next)
   }
 
   controller.register = (module) => {
     Object.assign(modules, module)
   }
+
+  controller.injectRequest = () => currentRequest
 
   return controller
 }
