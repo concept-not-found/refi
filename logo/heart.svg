@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 300 300" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><metadata><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/></cc:Work></rdf:RDF></metadata><g transform="matrix(1.25,0,0,-1.25,0,300)"><g transform="matrix(.06 0 0 -.06 0 595)"/><g transform="matrix(.28632 -.28632 .28632 .28632 -83.922 197.7)" fill-rule="evenodd"><path d="m385.51 332.8h-70.866c-78.277 0-141.73-63.456-141.73-141.73s63.456-141.73 141.73-141.73h354.33v354.33c0 78.277-63.456 141.73-141.73 141.73-78.277 0-141.73-63.456-141.73-141.73v-70.866z" fill="#f00"/><path d="m527.24 261.93h-70.866v-141.73h-70.866v141.73h-70.866c-39.138 0-70.866-31.728-70.866-70.866v-70.866h-70.866v70.866c0 78.277 63.456 141.73 141.73 141.73h70.866v70.866c0 78.277 63.456 141.73 141.73 141.73 78.277 0 141.73-63.456 141.73-141.73 0-19.569-15.864-35.433-35.433-35.433-19.569 0-35.433 15.864-35.433 35.433 0 39.138-31.728 70.866-70.866 70.866-39.138 0-70.866-31.728-70.866-70.866v-70.866h70.866v-70.866zm70.866 70.866v-212.6h70.866v212.6h-70.866z"/></g></g></svg>
+  <svg version="1.1" viewBox="0 0 350 250" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g transform="translate(0-25) rotate(45 175 175) scale(.7)">
+    <path d="m150 150h-50a100 100 0 0 0 0 200h250v-250a100 100 0 0 0-200 0z" fill="#f00" fill-rule="evenodd"/>
+    <path d="m250 200h-50v125a25 25 0 0 1-50 0v-125h-50a 50 50 0 0 0-50 50v75a25 25 0 0 1-50 0v-75a100 100 0 0 1 100-100h50v-50a 100 100 0 0 1 200 0 a 25 25 0 0 1-50 0a50 50 0 0 0-100 0v50h50a25 25 0 0 1 0 50zm50 125a25 25 0 0 0 50 0v-150a25 25 0 0 0-50 0z" fill-rule="evenodd"/>
+  </g>
+</svg>
