@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="#000" stroke-linecap="round" stroke-width="50">
-<path d="m25 325v-75a75 75 0 0 1 75-75h150"/>
-<path d="m175 325v-225a75 75 0 0 1 150 0"/>
-<path d="m325 175v150"/>
-</g>
+<path d="m25 325v-75a75 75 0 0 1 75-75h150m-75 150v-225a75 75 0 0 1 150 0m0 75v150" fill="none" stroke="#000" stroke-linecap="round" stroke-width="50"/>
 </svg>
