@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <svg version="1.1" viewBox="0 0 350 350" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <metadata>
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:title/>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path d="m250 200h-50v125a25 25 0 0 1-50 0v-125h-50a 50 50 0 0 0-50 50v75a25 25 0 0 1-50 0v-75a100 100 0 0 1 100-100h50v-50a 100 100 0 0 1 200 0 a 25 25 0 0 1-50 0a50 50 0 0 0-100 0v50h50a25 25 0 0 1 0 50zm50 125a25 25 0 0 0 50 0v-150a25 25 0 0 0-50 0z" fill-rule="evenodd"/>
+<svg viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+<path d="m250 200h-50v125a25 25 0 0 1-50 0v-125h-50a 50 50 0 0 0-50 50v75a25 25 0 0 1-50 0v-75a100 100 0 0 1 100-100h50v-50a 100 100 0 0 1 200 0 a 25 25 0 0 1-50 0a50 50 0 0 0-100 0v50h50a25 25 0 0 1 0 50zm50 125a25 25 0 0 0 50 0v-150a25 25 0 0 0-50 0z"/>
 </svg>
