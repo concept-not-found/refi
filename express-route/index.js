@@ -14,7 +14,7 @@ module.exports = (express) => {
       case 'object':
         return response.send({
           result: 'service',
-          functions: Object.keys(definition)
+          'function-names': Object.keys(definition)
         })
       default:
         return response.send({

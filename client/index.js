@@ -25,7 +25,7 @@ export default (serverUri) => {
                 return Promise.reject(error)
               })
           case 'service':
-            specification.functions.forEach((functionName) => {
+            specification['function-names'].forEach((functionName) => {
               x[functionName] = (...args) => http.post(`/${name}/${functionName}`, args)
                 .then(({data: {result, value, error}}) => {
                   if (result === 'success') {
