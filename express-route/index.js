@@ -75,10 +75,10 @@ module.exports = (express) => {
         }
         const functionDefinition = serviceDefinition[name]
         if (!functionDefinition) {
-          throw new Error(`no function named ${name}`)
+          throw new Error(`no function named ${name} on service ${service}`)
         }
         if (typeof functionDefinition !== 'function') {
-          throw new Error(`expected ${name} to be a function, but was a service`)
+          throw new Error(`expected ${name} to be a function on service ${service}`)
         }
         try {
           currentRequest = request
