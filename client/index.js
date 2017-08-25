@@ -1,38 +1,35 @@
 import axios from 'axios'
 
+function handleInvokeResponse({data: {result, value, error}}) {
+  if (result === 'success') {
+    return value
+  }
+  return Promise.reject(error)
+}
+
 export default (serverUri) => {
   const http = axios.create({
     baseURL: serverUri
   })
 
   return (name) => {
-    let specificationPromise
+    let definitionPromise = undefined
 
-    function x(...args) {
-      return specificationPromise
+    function proxy(...args) {
+      return definitionPromise
         .then((f) => f(args))
     }
 
-    specificationPromise = http.get(`/${name}`)
-      .then(({data: specification}) => {
-        switch (specification.result) {
+    definitionPromise = http.get(`/${name}`)
+      .then(({data: definition}) => {
+        switch (definition.type) {
           case 'function':
             return (args) => http.post(`/${name}`, args)
-              .then(({data: {result, value, error}}) => {
-                if (result === 'success') {
-                  return value
-                }
-                return Promise.reject(error)
-              })
+              .then(handleInvokeResponse)
           case 'service':
-            specification['function-names'].forEach((functionName) => {
-              x[functionName] = (...args) => http.post(`/${name}/${functionName}`, args)
-                .then(({data: {result, value, error}}) => {
-                  if (result === 'success') {
-                    return value
-                  }
-                  return Promise.reject(error)
-                })
+            definition['function-names'].forEach((functionName) => {
+              proxy[functionName] = (...args) => http.post(`/${name}/${functionName}`, args)
+                .then(handleInvokeResponse)
             })
             return Promise.reject(new Error(`${name} is a service and should not be called as a function`))
           default:
@@ -40,6 +37,6 @@ export default (serverUri) => {
         }
       })
     
-    return x
+    return proxy
   }
 }

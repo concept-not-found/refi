@@ -21,13 +21,13 @@ Retrieves a definition by name.
   * When the given name is a definition of a function
     ```json
     {
-      "result": "function"
+      "type": "function"
     }
     ```
   * When the given name is a definition of a service
     ```json
       {
-        "result": "service",
+        "type": "service",
         "function-names": [
           <some function name>,
           <some other function name>,
@@ -38,7 +38,7 @@ Retrieves a definition by name.
   * When the given name does not corresponse to a function nor service definition
     ```json
       {
-        "result": "not found"
+        "type": "not found"
       }
     ```
 
