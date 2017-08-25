@@ -11,6 +11,6 @@ window.send = () => {
       document.getElementById('result').value = result
     })
     .catch((error) => {
-      document.getElementById('error').value = error
+      document.getElementById('error').value = error.message
     })
 }

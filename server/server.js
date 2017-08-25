@@ -20,7 +20,9 @@ module.exports = () => {
     injectRequest: rfiRoute.injectRequest,
 
     start(port) {
-      application.listen(port)
+      return new Promise((resolve) => {
+        application.listen(port, resolve)
+      })
     }
   }
 }
