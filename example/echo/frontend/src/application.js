@@ -1,6 +1,8 @@
 import rfi from 'rfi-client'
 
 const rfiServer = rfi('http://localhost:9080')
+
+// this will lookup a function call echo on the remote
 const remoteEcho = rfiServer('echo')
 
 window.send = () => {

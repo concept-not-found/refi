@@ -10,5 +10,5 @@ rfiServer.register({
 
 rfiServer.start(9080)
   .then(() => {
-    console.log('start backend on http://localhost:9000')
+    console.log('started echo backend on http://localhost:9080')
   })

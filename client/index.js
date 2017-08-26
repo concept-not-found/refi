@@ -17,7 +17,7 @@ export default (serverUri) => {
 
     function proxy(...args) {
       return definitionPromise
-        .then((f) => f(args))
+        .then((httpInvoke) => httpInvoke(args))
     }
 
     definitionPromise = http.get(`/${name}`)
