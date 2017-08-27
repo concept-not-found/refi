@@ -8,12 +8,14 @@ Usage
 ### Remote Function
 Connect to the rfi-server.
 ```js
-const rfiServer = rfi('http://uri-of-rfi-server');
+const RfiClient = require('rfi-client');
+
+const rfi = RfiClient('http://uri-of-rfi-server');
 ```
 
 Retrieve the function reference.
 ```js
-const remoteFunction = rfiServer('someFunctionName');
+const remoteFunction = rfi('someFunctionName');
 ```
 
 Call the function as if it was local. It will return a promise.
@@ -31,7 +33,7 @@ remoteFunction(someArguments, someOtherArguments)
 A service is a set of functions. Services can be retrieved by name as well.
 
 ```js
-const remoteService = rfiServer('someServiceName');
+const remoteService = rfi('someServiceName');
 ```
 
 Services will have all functions as properties and can be called as if they are local.
@@ -47,6 +49,5 @@ remoteService.remoteFunction(someArguments, someOtherArguments)
 
 Also See
 --------
-
 For the backend see rfi-server and rfi-express-route.
 

@@ -1,9 +1,9 @@
-import rfi from 'rfi-client'
+import RfiClient from 'rfi-client'
 
-const rfiServer = rfi('http://localhost:9080')
+const rfi = RfiClient('http://localhost:9080')
 
 // this will lookup a function call echo on the remote
-const remoteEcho = rfiServer('echo')
+const remoteEcho = rfi('echo')
 
 window.send = () => {
   document.getElementById('error').value = ''
